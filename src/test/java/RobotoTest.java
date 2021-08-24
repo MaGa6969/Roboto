@@ -20,6 +20,11 @@ public class RobotoTest {
     }
 
     @Test
-    void cuandoLe
+    void cuandoLeDigoMiNombreYMeSaluda(){
+        RespuestasRoboto nombre = new RespuestasRoboto();
+        String respuesta = nombre.respuesta("Me llamo Ana");
+        assertThat(respuesta, equalTo("Encantada de conocerme, Ana"));
+
+    }
 
 }
